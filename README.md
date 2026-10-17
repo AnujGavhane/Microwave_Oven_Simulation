@@ -36,7 +36,6 @@ microwave_oven.X/
 ├── timers.c / timers.h    Timer2 initialization
 ├── isr.c                  Timer2 interrupt service routine
 ├── Makefile               MPLAB X generated build entry point
-└── nbproject/             MPLAB X project and device/toolchain configuration
 ```
 
 ## User controls (as implemented)
@@ -87,11 +86,3 @@ The current source is suitable as a learning example, but some behaviors merit r
 - Confirm the door pin direction and digital/analog configuration against the actual PIC setup and circuit.
 
 These are source-review observations, not a claim that the simulation has been hardware-validated.
-
-## Source files
-
-The main application and drivers are in `microwave_oven.X/`. `Makefile` and `nbproject/` contain MPLAB X build metadata. Generated build outputs can be recreated and are generally not necessary to commit.
-
-## License
-
-No license is currently specified. Add a license file before redistributing or reusing this project so the intended usage terms are clear.
