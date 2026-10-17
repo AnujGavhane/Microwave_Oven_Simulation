@@ -17,11 +17,11 @@ A menu-driven microwave oven controller simulation written in embedded C for the
 | Item | Project setting / implementation |
 | --- | --- |
 | MCU | PIC16F877A |
-| IDE | MPLAB X (project files are under `microwave_oven.X/nbproject`) |
-| Compiler | XC8 3.10, as recorded in `configurations.xml` |
-| LCD | 4-bit interface, control/data pins described in `clcd.h` |
-| Keypad | 4 rows × 3 columns, pin mappings described in `matrix_keypad.h` |
-| Timer | Timer2, configured in `timers.c`; countdown serviced in `isr.c` |
+| IDE | MPLAB X |
+| Compiler | XC8 3.10 |
+| LCD | 4-bit interface, control/data pins |
+| Keypad | 4 rows × 3 columns |
+| Timer | Timer2 |
 
 The source defines `_XTAL_FREQ` as 20 MHz for LCD delay macros. Confirm the oscillator used in your simulator or hardware matches this value. The exact LCD wiring, board setup, and any simulator-specific configuration should also be checked against your circuit; not all electrical configuration is documented in the source.
 
@@ -38,8 +38,6 @@ microwave_oven.X/
 ├── Makefile               MPLAB X generated build entry point
 └── nbproject/             MPLAB X project and device/toolchain configuration
 ```
-
-`build/` and `dist/` are generated output directories and are not required to understand or build the source project; MPLAB X regenerates them during a build.
 
 ## User controls (as implemented)
 
